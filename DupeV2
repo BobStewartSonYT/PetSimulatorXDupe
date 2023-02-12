@@ -1,0 +1,103 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local DUPEV2 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(14, 98, 255)
+Frame.Position = UDim2.new(0.327773184, 0, 0.309469908, 0)
+Frame.Size = UDim2.new(0, 611, 0, 353)
+Frame.Active = true
+Frame.Draggable = true
+
+DUPEV2.Name = "DUPE V2"
+DUPEV2.Parent = Frame
+DUPEV2.BackgroundColor3 = Color3.fromRGB(82, 255, 8)
+DUPEV2.Size = UDim2.new(0, 611, 0, 50)
+DUPEV2.Font = Enum.Font.Unknown
+DUPEV2.Text = "DUPE V2"
+DUPEV2.TextColor3 = Color3.fromRGB(0, 0, 0)
+DUPEV2.TextSize = 30.000
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(14, 255, 10)
+TextLabel.Position = UDim2.new(0, 0, 0.858356953, 0)
+TextLabel.Size = UDim2.new(0, 611, 0, 50)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "MADE BY KianYT#1556"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 25.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(13, 255, 0)
+TextLabel_2.Position = UDim2.new(0, 0, 0.141643062, 0)
+TextLabel_2.Size = UDim2.new(0, 218, 0, 57)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "MENU"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 30.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Position = UDim2.new(0, 418, 0, 201)
+TextButton.Size = UDim2.new(0, 193, 0, 102)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "ACTIVATE"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 30.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BobStewartSonYT/CherryHub/main/PetSimulatorXBestPSX%22))()
+end)
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(91, 255, 2)
+TextLabel_3.Position = UDim2.new(0, 0, 0.283286124, 0)
+TextLabel_3.Size = UDim2.new(0, 218, 0, 203)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ""
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 3, 3)
+TextLabel_4.Position = UDim2.new(0.356792152, 0, 0.141643062, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "CLICK ACTIVATE TO START DUPE"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 16.000
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 3, 3)
+TextLabel_5.Position = UDim2.new(0.356792152, 0, 0.283286124, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "doesnt work in plaza /hardcore"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 16.000
+
+TextLabel_6.Parent = Frame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 3, 3)
+TextLabel_6.Position = UDim2.new(0.356792152, 0, 0.430594921, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "MAKE SURE YOU ARE IN SPAWN"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 16.000
